@@ -1,0 +1,500 @@
+/*
+ * css variables don't get typechecked, and it's very hard to refactor them, so we prefer
+ * to use these scss variables that refer to the css variables, since the scss has to be compiled,
+ * and the compilation will fail when scss-variables are undefined.
+ */
+.app-index__wrapper--8b_Tl {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box !important; }
+  .app-index__wrapper--8b_Tl ** {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: inherit; }
+
+.app-index__bottomLeft--71o3Y {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem; }
+
+.app-index__bottomRight--2qJ_T {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem; }
+
+.app-index__appContainer--1pytb {
+  font-family: var(--fonts-normal); }
+
+/*
+ * css variables don't get typechecked, and it's very hard to refactor them, so we prefer
+ * to use these scss variables that refer to the css variables, since the scss has to be compiled,
+ * and the compilation will fail when scss-variables are undefined.
+ */
+.tools-brush__textInput--1Qy5H {
+  background-color: var(--color-surface);
+  color: var(--color-onSurface);
+  padding: 0.25rem 0;
+  border-radius: 0.25rem;
+  font-family: var(--fonts-monospace); }
+  .tools-brush__textInput--1Qy5H:focus {
+    background-color: var(--color-secondary);
+    color: var(--color-onSecondary);
+    padding: 0.25rem 0.5rem; }
+
+.tools-brush__detailsContainer--2voTj {
+  background-color: var(--color-surface);
+  color: var(--color-onSurface);
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+  padding: 0.5rem 0.75rem;
+  height: 100%; }
+
+/*
+ * css variables don't get typechecked, and it's very hard to refactor them, so we prefer
+ * to use these scss variables that refer to the css variables, since the scss has to be compiled,
+ * and the compilation will fail when scss-variables are undefined.
+ */
+.views-menu__container--2nhom {
+  background-color: var(--color-surface);
+  color: var(--color-onSurface);
+  min-width: 6rem; }
+
+.views-menu__selectedDisplay--GVpTm {
+  cursor: pointer;
+  text-align: center;
+  min-width: 100%;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem; }
+  .views-menu__selectedDisplay--GVpTm:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-onSecondary); }
+
+.views-menu__selectedDisplayExpanded--2rS_4 {
+  cursor: pointer;
+  text-align: center;
+  min-width: 100%;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: var(--color-secondary);
+  color: var(--color-onSecondary); }
+
+.views-menu__selectableOptions--3CT9b {
+  position: absolute;
+  flex-direction: column;
+  min-width: 6rem;
+  margin-top: 1px;
+  background-color: var(--color-surface);
+  color: var(--color-onSurface);
+  box-shadow: var(--shadows-menu); }
+  .views-menu__selectableOptions--3CT9b > :first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem; }
+  .views-menu__selectableOptions--3CT9b > :last-child {
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; }
+
+.views-menu__optionDefault--Ra-YW {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem; }
+  .views-menu__optionDefault--Ra-YW:hover {
+    background-color: var(--color-secondaryLight); }
+
+.views-menu__optionSelected--3gQmu {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--color-secondary);
+  color: var(--color-onSecondary); }
+
+.views-colorWheel__container--3l98i {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.views-colorWheel__cicleThumb--1syQZ {
+  z-index: 100;
+  position: absolute;
+  width: 1rem;
+  height: 0.5rem;
+  margin-left: calc(-0.5rem - 0.05rem);
+  margin-top: calc(-0.25rem - 0.05rem);
+  border-width: 0.1rem;
+  border-style: solid; }
+
+.views-colorWheel__areaThumb--1ruwH {
+  z-index: 100;
+  position: absolute;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: calc(-0.375rem - 0.05rem);
+  margin-top: calc(-0.375rem - 0.05rem);
+  border-width: 0.1rem;
+  border-style: solid;
+  border-radius: 0.375rem; }
+
+.views-labeled__container--LxxXR {
+  color: inherit;
+  margin: 0.5rem 0;
+  width: 100%; }
+
+.views-labeled__label--3QcRA {
+  color: inherit;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem; }
+
+.views-labeled__content--3Aqxf {
+  width: 100%; }
+
+.views-labeled__textContainer--20WmP {
+  display: flex;
+  justify-content: space-between;
+  color: inherit;
+  pointer-events: none;
+  user-select: none; }
+
+/*
+ * css variables don't get typechecked, and it's very hard to refactor them, so we prefer
+ * to use these scss variables that refer to the css variables, since the scss has to be compiled,
+ * and the compilation will fail when scss-variables are undefined.
+ */
+.views-slider__container--1iRqF {
+  cursor: pointer;
+  margin: 0.25rem 0;
+  padding: 0.25rem 0;
+  width: 100%;
+  position: relative; }
+
+.views-slider__baseLine--LIh9H {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  height: 2px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: var(--color-secondaryLight);
+  z-index: 0; }
+
+.views-slider__filledLineClass--3Zx18 {
+  cursor: pointer;
+  position: absolute;
+  height: 2px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: var(--color-primary);
+  z-index: 1; }
+
+.views-slider__emptyButton--ql0yq {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  transform: translate(0, -50%);
+  z-index: 2;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+  background-color: var(--color-secondaryLight); }
+
+.views-slider__button--2AbV7 {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  transform: translate(0, -50%);
+  z-index: 2;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+  background-color: var(--color-primary); }
+
+.views-inlineLabeled__container--1KSLm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: inherit;
+  margin: 0.25rem 0;
+  width: 100%; }
+
+.views-inlineLabeled__label--17JF0 {
+  color: inherit;
+  font-size: 0.875rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none; }
+
+/*
+ * css variables don't get typechecked, and it's very hard to refactor them, so we prefer
+ * to use these scss variables that refer to the css variables, since the scss has to be compiled,
+ * and the compilation will fail when scss-variables are undefined.
+ */
+.views-switch__xswitch--ca3kq {
+  cursor: pointer;
+  display: inline-flex;
+  margin: 0.5rem 0; }
+
+.views-switch__switchButtonContainer--26j0i {
+  display: inline-flex;
+  position: absolute;
+  z-index: 2;
+  transition: 150ms transform; }
+
+.views-switch__switchButton--3PW3L {
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  z-index: 2;
+  transition: 150ms background-color, 150ms transform;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12); }
+
+.views-switch__bgColorPrimary--2HWWs {
+  background-color: var(--color-primary); }
+
+.views-switch__bgColorSecondary--TM4-n {
+  background-color: var(--color-secondary); }
+
+.views-switch__switchBar--3G205 {
+  background-color: var(--color-secondaryLight);
+  display: block;
+  width: 1.75rem;
+  height: 0.75rem;
+  border-radius: 0.3775rem;
+  z-index: 1;
+  transition: 150ms background-color, 150ms opacity; }
+
+.views-colorDisplay__container--29MR4 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 1rem; }
+
+.views-colorDisplay__secondary--19HF5 {
+  width: 25%;
+  height: 1rem;
+  margin-right: 5%;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12); }
+
+.views-colorDisplay__primary--otL3I {
+  width: 70%;
+  height: 1rem;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12); }
+
+/*
+ * css variables don't get typechecked, and it's very hard to refactor them, so we prefer
+ * to use these scss variables that refer to the css variables, since the scss has to be compiled,
+ * and the compilation will fail when scss-variables are undefined.
+ */
+.views-surface__surfaceLook--1NdKb {
+  background-color: var(--color-surface);
+  color: var(--color-onSurface);
+  box-shadow: var(--shadows-surface); }
+
+.views-surface__surface--2Mync {
+  background-color: var(--color-surface);
+  color: var(--color-onSurface);
+  box-shadow: var(--shadows-surface);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: none; }
+
+/*
+ * css variables don't get typechecked, and it's very hard to refactor them, so we prefer
+ * to use these scss variables that refer to the css variables, since the scss has to be compiled,
+ * and the compilation will fail when scss-variables are undefined.
+ */
+.tools-eraser__detailsContainer--1J20r {
+  background-color: var(--color-surface);
+  color: var(--color-onSurface);
+  display: flex;
+  flex-direction: column;
+  width: 12rem;
+  padding: 0.5rem 0.75rem;
+  height: 100%; }
+
+/*
+ * css variables don't get typechecked, and it's very hard to refactor them, so we prefer
+ * to use these scss variables that refer to the css variables, since the scss has to be compiled,
+ * and the compilation will fail when scss-variables are undefined.
+ */
+.views-buttons__primary--P_SV9 {
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  height: 2.25rem;
+  width: 100%;
+  min-width: 4rem;
+  transition: all 150ms;
+  line-height: 1.4em;
+  box-shadow: var(--shadows-button);
+  background-color: var(--color-primary);
+  color: var(--color-onPrimary); }
+  .views-buttons__primary--P_SV9:hover {
+    background-color: var(--color-primaryLight); }
+  .views-buttons__primary--P_SV9:active {
+    background-color: var(--color-primaryDark); }
+
+.views-buttons__ddefault--1BBT_ {
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  height: 2.25rem;
+  width: 100%;
+  min-width: 4rem;
+  transition: all 150ms;
+  line-height: 1.4em;
+  box-shadow: var(--shadows-button);
+  background-color: var(--color-secondary);
+  color: var(--color-onSecondary); }
+  .views-buttons__ddefault--1BBT_:hover {
+    background-color: var(--color-secondaryLight); }
+  .views-buttons__ddefault--1BBT_:active {
+    background-color: var(--color-secondaryDark); }
+
+.views-buttons__sinkableUnsunk--1PnHd {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 12px 16px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  transition: background-color 0.15s; }
+  .views-buttons__sinkableUnsunk--1PnHd:hover {
+    background-color: rgba(0, 0, 0, 0.15); }
+
+.views-buttons__sinkableSunk--1ViVx {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+  padding: 12px 16px;
+  border: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5); }
+
+.tools-toolbar__toolBarContainer--3Xlgx {
+  display: flex; }
+
+.tools-toolbar__leftBar--2PlvS {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  margin-right: 0.5rem; }
+  .tools-toolbar__leftBar--2PlvS > :not(:last-child) {
+    margin-bottom: 0.125rem; }
+  .tools-toolbar__leftBar--2PlvS > :not(:last-child) {
+    margin-bottom: 0.125rem; }
+
+/*
+ * css variables don't get typechecked, and it's very hard to refactor them, so we prefer
+ * to use these scss variables that refer to the css variables, since the scss has to be compiled,
+ * and the compilation will fail when scss-variables are undefined.
+ */
+.layers-view__layersWrapper--3ZfQn {
+  height: 100%; }
+
+.layers-view__layersListWrapper--1Tkb_ {
+  padding: 0.5rem 0.25rem; }
+  .layers-view__layersListWrapper--1Tkb_ > :not(:first-child) {
+    margin-top: 0.25rem; }
+
+.layers-view__layersControlsWrapper--2yZCW {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 100%; }
+
+.layers-view__unselectedLayerWrapper--CJqHx {
+  cursor: pointer;
+  border: 1px solid transparent; }
+  .layers-view__unselectedLayerWrapper--CJqHx:hover {
+    border: 1px solid var(--color-secondaryDark); }
+
+.layers-view__selectedLayerWrapper--1aNDA {
+  border: 1px solid var(--color-secondary); }
+
+.layers-view__layerLeft--3IVhD {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 0.5rem;
+  background-color: #789; }
+
+.layers-view__layerRight--3aI8m {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.5rem; }
+
+.layers-view__layerName--15uDf {
+  font-size: 1rem; }
+
+.layers-view__layerOpacity--3odsZ {
+  font-size: 0.75rem; }
+
+.views-row__row--2LRwx {
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+  height: inherit; }
+
+.views-row__column--3VaR6 {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: inherit; }
+
+/*
+ * css variables don't get typechecked, and it's very hard to refactor them, so we prefer
+ * to use these scss variables that refer to the css variables, since the scss has to be compiled,
+ * and the compilation will fail when scss-variables are undefined.
+ */
+.debugging-index__container--1RM8E {
+  z-index: 100;
+  display: flex;
+  padding: 0.5rem 1rem; }
+
+.debugging-index__contentContainer--jBGUK {
+  padding-left: 1rem; }
+
+.debugging-index__monospaced--1arMB {
+  font-family: var(--fonts-monospace); }
+
+/*
+ * css variables don't get typechecked, and it's very hard to refactor them, so we prefer
+ * to use these scss variables that refer to the css variables, since the scss has to be compiled,
+ * and the compilation will fail when scss-variables are undefined.
+ */
+.debugging-scripting__monospaced--1EwqA {
+  font-family: var(--fonts-monospace); }
+
+.debugging-scripting__codeInput--3t0j8 {
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--color-primary);
+  color: var(--color-onPrimary);
+  border-radius: 0.25rem;
+  padding: 0.25rem; }
+
+
+/*# sourceMappingURL=main-65359a554dfd766255f6.css.map*/
