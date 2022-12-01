@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<style>
+			html {
+				background-color: black;
+				color: white;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 16px;
+				width: 100%;
+			}
+			* {
+				font-family: inherit;
+				font-size: inherit;
+				color: inherit;
+				box-sizing: border-box;
+			}
+			html,
+			body,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			code {
+				padding: 0;
+				margin: 0;
+			}
+			p {
+				font-size: 1rem;
+				line-height: 1rem;
+			}
+			h3 {
+				font-weight: lighter;
+				font-size: 1.25rem;
+				line-height: 1.25rem;
+			}
+			h2 {
+				font-weight: lighter;
+				font-size: 1.75rem;
+				line-height: 1.75rem;
+			}
+			h1 {
+				font-weight: lighter;
+				font-size: 2.5rem;
+				line-height: 2.5rem;
+			}
+			a {
+				width: min-content;
+				color: hwb(226 35% 0%);
+			}
+			a:hover {
+				text-decoration: none;
+			}
+			button {
+				cursor: pointer;
+				background-color: rgb(50, 50, 50);
+				border: 1px solid rgb(50, 50, 50);
+				color: white;
+				padding: 0.5rem 1rem;
+				max-width: fit-content;
+			}
+			button:hover {
+				border: 1px solid lightgrey;
+			}
+			hr {
+				margin: 1rem 0;
+				border: 0;
+				border-bottom: 1px solid grey;
+			}
+		</style>
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-4f2ae9b2.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-121c2978.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-cb5479b9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-3155a5b5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-8c9f615b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-b763cd81.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths-6cd3a76e.js">
+		<link rel="modulepreload" href="../_app/immutable/components/layout.svelte-5982573f.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/things/_layout.svelte-7ca70d02.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/things/painter/_page.svelte-ef69fe58.js"><title>Paint tool v2</title><!-- HEAD_svelte-w8bttj_START --><!-- HEAD_svelte-w8bttj_END -->
+	</head>
+	<body>
+		<div>
+
+
+<a href="/" class="svelte-1qlwxnl"><button>Front page
+    </button></a>
+
+
+<main style="background-color: var(--color-background, #555)"><div class="appContainer svelte-5xuksa"><div class="wrapper svelte-5xuksa"><div class="toolBarContainer svelte-11igebj"><div class="surfaceLike leftBar svelte-11igebj"><button class="sinkableSunk svelte-2hvqwf"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="svelte-uxfzd6"><path d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34c-.39-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.02 0-1.41z"></path></svg>
+</button>
+        <button class="sinkableUnsunk svelte-2hvqwf"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="svelte-uxfzd6"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg>
+</button>
+        <button class="sinkableUnsunk svelte-2hvqwf"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="svelte-uxfzd6"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+</button></div>
+    <div class="surface svelte-bbao3p"><div class="detailsContainer svelte-15pr5om"><div style="margin: 0.5rem 0">
+<div class="container svelte-2j7vup"><div class="selectedDisplay svelte-2j7vup">Hsluv</div>
+    
+</div></div>
+        <div class="container svelte-wwm2hq"><div><div></div>
+        <div class="circleThumb svelte-wwm2hq"></div>
+        <div class="areaThumb svelte-wwm2hq"></div></div>
+</div>
+        <div style="margin: 0.5rem 0">
+<div class="container svelte-1whbsbw"><span class="secondary svelte-1whbsbw" style="background-color: rgb(255,255,255)"></span>
+    <span class="primary svelte-1whbsbw" style="background-color: rgb(46,39,0)"></span>
+</div></div>
+        <div style="margin: 0.5rem 0"><input class="textInput svelte-x1veui" type="text" value="rgb(46,39,0)"></div>
+        <div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Size</p>
+        
+        <p class="label svelte-1tm4qf2">15.0 px</p></div>
+    
+    <div class="content svelte-1tm4qf2"><div class="container svelte-1v7d1ps"><div><div class="button svelte-1v7d1ps" style="left: calc(0.03 * calc(100% - 0.75rem)); background-color: undefined"></div>
+        <div class="filledLineClass svelte-1v7d1ps" style="width: 3%; background-color: undefined"></div>
+        <div class="baseline svelte-1v7d1ps"></div></div>
+</div></div>
+</div>
+        <div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Softness</p>
+        
+        <p class="label svelte-1tm4qf2">0.40</p></div>
+    
+    <div class="content svelte-1tm4qf2"><div class="container svelte-1v7d1ps"><div><div class="button svelte-1v7d1ps" style="left: calc(0.4 * calc(100% - 0.75rem)); background-color: undefined"></div>
+        <div class="filledLineClass svelte-1v7d1ps" style="width: 40%; background-color: undefined"></div>
+        <div class="baseline svelte-1v7d1ps"></div></div>
+</div></div>
+</div>
+        <div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Flow</p>
+        
+        <p class="label svelte-1tm4qf2">0.30</p></div>
+    
+    <div class="content svelte-1tm4qf2"><div class="container svelte-1v7d1ps"><div><div class="button svelte-1v7d1ps" style="left: calc(0.3 * calc(100% - 0.75rem)); background-color: undefined"></div>
+        <div class="filledLineClass svelte-1v7d1ps" style="width: 30%; background-color: undefined"></div>
+        <div class="baseline svelte-1v7d1ps"></div></div>
+</div></div>
+</div>
+        <div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Spacing</p>
+        
+        <p class="label svelte-1tm4qf2">0.05%</p></div>
+    
+    <div class="content svelte-1tm4qf2"><div class="container svelte-1v7d1ps"><div><div class="button svelte-1v7d1ps" style="left: calc(0.05 * calc(100% - 0.75rem)); background-color: undefined"></div>
+        <div class="filledLineClass svelte-1v7d1ps" style="width: 5%; background-color: undefined"></div>
+        <div class="baseline svelte-1v7d1ps"></div></div>
+</div></div>
+</div>
+        <div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Hue</p>
+        
+        <p class="label svelte-1tm4qf2">73.00</p></div>
+    
+    <div class="content svelte-1tm4qf2"><div class="container svelte-1v7d1ps"><div><div class="button svelte-1v7d1ps" style="left: calc(1 * calc(100% - 0.75rem)); background-color: undefined"></div>
+        <div class="filledLineClass svelte-1v7d1ps" style="width: 100%; background-color: undefined"></div>
+        <div class="baseline svelte-1v7d1ps"></div></div>
+</div></div>
+</div>
+<div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Saturation</p>
+        
+        <p class="label svelte-1tm4qf2">100.00</p></div>
+    
+    <div class="content svelte-1tm4qf2"><div class="container svelte-1v7d1ps"><div><div class="button svelte-1v7d1ps" style="left: calc(1 * calc(100% - 0.75rem)); background-color: undefined"></div>
+        <div class="filledLineClass svelte-1v7d1ps" style="width: 100%; background-color: undefined"></div>
+        <div class="baseline svelte-1v7d1ps"></div></div>
+</div></div>
+</div>
+<div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Luminosity</p>
+        
+        <p class="label svelte-1tm4qf2">16.00</p></div>
+    
+    <div class="content svelte-1tm4qf2"><div class="container svelte-1v7d1ps"><div><div class="button svelte-1v7d1ps" style="left: calc(1 * calc(100% - 0.75rem)); background-color: undefined"></div>
+        <div class="filledLineClass svelte-1v7d1ps" style="width: 100%; background-color: undefined"></div>
+        <div class="baseline svelte-1v7d1ps"></div></div>
+</div></div>
+</div>
+        <div class="container svelte-19lfj27"><div class="label svelte-19lfj27">Pressure-Opacity</div>
+    
+<span class="xswitch svelte-lpbvur"><span class="switchButtonContainer svelte-lpbvur" style="transform: translate(0, -0.125rem)"><span class="switchButton bgColorSecondary svelte-lpbvur"></span></span>
+    <span class="switchBar svelte-lpbvur"></span>
+</span>
+</div>
+        <div class="container svelte-19lfj27"><div class="label svelte-19lfj27">Pressure-Size</div>
+    
+<span class="xswitch svelte-lpbvur"><span class="switchButtonContainer svelte-lpbvur" style="transform: translate(0.75rem, -0.125rem)"><span class="switchButton bgColorPrimary svelte-lpbvur"></span></span>
+    <span class="switchBar svelte-lpbvur"></span>
+</span>
+</div>
+        <div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Delay</p>
+        
+        <p class="label svelte-1tm4qf2">5ms</p></div>
+    
+    <div class="content svelte-1tm4qf2"><div class="container svelte-1v7d1ps"><div><div class="button svelte-1v7d1ps" style="left: calc(0.01 * calc(100% - 0.75rem)); background-color: undefined"></div>
+        <div class="filledLineClass svelte-1v7d1ps" style="width: 1%; background-color: undefined"></div>
+        <div class="baseline svelte-1v7d1ps"></div></div>
+</div></div>
+</div></div>
+</div>
+</div>
+        <canvas class="canvas svelte-5xuksa" width="800" height="800" style="transform: translate(0px, 0px) rotate(0turn) scale(1, 1)"></canvas>
+        <div class="layersViewContainer svelte-5xuksa"><div class="surface svelte-bbao3p"><div class="container svelte-1o7mh2m"><div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Zoom</p>
+        
+        <p class="label svelte-1tm4qf2">100.00%</p></div>
+    
+    <div class="content svelte-1tm4qf2"><div class="container svelte-1v7d1ps"><div><div class="button svelte-1v7d1ps" style="left: calc(0.25 * calc(100% - 0.75rem)); background-color: undefined"></div>
+        <div class="filledLineClass svelte-1v7d1ps" style="width: 25%; background-color: undefined"></div>
+        <div class="baseline svelte-1v7d1ps"></div></div>
+</div></div>
+</div>
+    <div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Rotate</p>
+        
+        <p class="label svelte-1tm4qf2">0.0 deg</p></div>
+    
+    <div class="content svelte-1tm4qf2"><div class="container svelte-1v7d1ps"><div><div class="emptyButton svelte-1v7d1ps" style="left: calc(0 * calc(100% - 0.75rem)); background-color: undefined"></div>
+        <div class="filledLineClass svelte-1v7d1ps" style="width: 0%; background-color: undefined"></div>
+        <div class="baseline svelte-1v7d1ps"></div></div>
+</div></div>
+</div>
+    <div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Offset X</p>
+        
+        <p class="label svelte-1tm4qf2">0 px</p></div>
+    
+    <div class="content svelte-1tm4qf2"><div class="container svelte-1v7d1ps"><div><div class="button svelte-1v7d1ps" style="left: calc(0.5 * calc(100% - 0.75rem)); background-color: undefined"></div>
+        <div class="filledLineClass svelte-1v7d1ps" style="width: 50%; background-color: undefined"></div>
+        <div class="baseline svelte-1v7d1ps"></div></div>
+</div></div>
+</div>
+    <div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Offset Y</p>
+        
+        <p class="label svelte-1tm4qf2">0 px</p></div>
+    
+    <div class="content svelte-1tm4qf2"><div class="container svelte-1v7d1ps"><div><div class="button svelte-1v7d1ps" style="left: calc(0.5 * calc(100% - 0.75rem)); background-color: undefined"></div>
+        <div class="filledLineClass svelte-1v7d1ps" style="width: 50%; background-color: undefined"></div>
+        <div class="baseline svelte-1v7d1ps"></div></div>
+</div></div>
+</div>
+</div>
+</div>
+                <div class="layersWrapper svelte-8rt2vb"><div class="surface svelte-bbao3p"><div class="layersControlsWrapper svelte-8rt2vb"><div class="row svelte-1r2824" style="gap: 0.25rem"><button title="New layer" class="ddefault svelte-hichw">New
+                
+</button>
+                <button title="Delete layer" class="ddefault svelte-hichw">Delete
+                
+</button>
+</div>
+            <div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Hidden</p>
+        
+        <p class="label svelte-1tm4qf2"></p></div>
+    
+    <div class="content svelte-1tm4qf2">
+<span class="xswitch svelte-lpbvur"><span class="switchButtonContainer svelte-lpbvur" style="transform: translate(0, -0.125rem)"><span class="switchButton bgColorSecondary svelte-lpbvur"></span></span>
+    <span class="switchBar svelte-lpbvur"></span>
+</span></div>
+</div>
+            <div class="container svelte-1tm4qf2"><div class="textContainer svelte-1tm4qf2"><p class="label svelte-1tm4qf2">Opacity</p>
+        
+        <p class="label svelte-1tm4qf2">1.00</p></div>
+    
+    <div class="content svelte-1tm4qf2"><div class="container svelte-1v7d1ps"><div><div class="button svelte-1v7d1ps" style="left: calc(1 * calc(100% - 0.75rem)); background-color: undefined"></div>
+        <div class="filledLineClass svelte-1v7d1ps" style="width: 100%; background-color: undefined"></div>
+        <div class="baseline svelte-1v7d1ps"></div></div>
+</div></div>
+</div></div>
+</div>
+    <div class="layersListWrapper svelte-8rt2vb">
+<div class="selectedLayerWrapper svelte-1xkk8yf"><div class="surface svelte-bbao3p"><div class="layerLeft svelte-1xkk8yf"></div>
+        <div class="layerRight svelte-1xkk8yf"><div class="layerName svelte-1xkk8yf">Layer 1</div>
+            <div class="layerOpacity svelte-1xkk8yf"><span><span>Opacity: </span>
+                        <span>1.00</span></span></div></div>
+</div>
+</div></div>
+</div></div></div>
+    <div class="bottomLeft svelte-5xuksa"><button class="primary svelte-1atnns5">Next theme
+</button></div>
+    
+</div></main>
+
+
+		<script type="module" data-sveltekit-hydrate="szt371">
+			import { start } from "../_app/immutable/start-cb5479b9.js";
+
+			start({
+				env: {},
+				hydrate: {
+					status: 200,
+					error: null,
+					node_ids: [0, 4, 11],
+					params: {},
+					route: {"id":"/things/painter"},
+					data: [null,null,{type:"data",data:null,uses:{}}],
+					form: null
+				},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="szt371"]').parentNode,
+				trailing_slash: "never"
+			});
+		</script>
+	</div>
+	</body>
+</html>

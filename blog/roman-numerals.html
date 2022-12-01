@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<style>
+			html {
+				background-color: black;
+				color: white;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 16px;
+				width: 100%;
+			}
+			* {
+				font-family: inherit;
+				font-size: inherit;
+				color: inherit;
+				box-sizing: border-box;
+			}
+			html,
+			body,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			code {
+				padding: 0;
+				margin: 0;
+			}
+			p {
+				font-size: 1rem;
+				line-height: 1rem;
+			}
+			h3 {
+				font-weight: lighter;
+				font-size: 1.25rem;
+				line-height: 1.25rem;
+			}
+			h2 {
+				font-weight: lighter;
+				font-size: 1.75rem;
+				line-height: 1.75rem;
+			}
+			h1 {
+				font-weight: lighter;
+				font-size: 2.5rem;
+				line-height: 2.5rem;
+			}
+			a {
+				width: min-content;
+				color: hwb(226 35% 0%);
+			}
+			a:hover {
+				text-decoration: none;
+			}
+			button {
+				cursor: pointer;
+				background-color: rgb(50, 50, 50);
+				border: 1px solid rgb(50, 50, 50);
+				color: white;
+				padding: 0.5rem 1rem;
+				max-width: fit-content;
+			}
+			button:hover {
+				border: 1px solid lightgrey;
+			}
+			hr {
+				margin: 1rem 0;
+				border: 0;
+				border-bottom: 1px solid grey;
+			}
+		</style>
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-e4a55f15.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/header-c0ae6a5d.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-cb5479b9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-3155a5b5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-8c9f615b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-b763cd81.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths-6cd3a76e.js">
+		<link rel="modulepreload" href="../_app/immutable/components/layout.svelte-5982573f.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_layout.svelte-714feece.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/header-2f7bfb52.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/roman-numerals/_page.svelte-32154a6b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/roman-numerals-ea046c92.js"><title>Roman Numerals</title><!-- HEAD_svelte-yuw2n3_START --><!-- HEAD_svelte-yuw2n3_END -->
+	</head>
+	<body>
+		<div>
+
+
+<header><nav class="container svelte-1yndy38"><a href="/" class="svelte-1mdi59a"><div class="link-container svelte-1mdi59a"><h3 class="svelte-1mdi59a">Things</h3>
+        <div class="bottom-line svelte-1mdi59a"></div></div></a>
+        <a href="/blog" class="svelte-1mdi59a"><div class="link-container svelte-1mdi59a"><h3 class="svelte-1mdi59a">Blog</h3>
+        <div class="bottom-line svelte-1mdi59a"></div></div></a>
+        <a href="/about" class="svelte-1mdi59a"><div class="link-container svelte-1mdi59a"><h3 class="svelte-1mdi59a">About</h3>
+        <div class="bottom-line svelte-1mdi59a"></div></div></a></nav></header>
+<main class="svelte-uh02w0">
+
+<!-- HTML_TAG_START --><h1>Roman Numerals</h1>
+<p>Though it is not common knowledge, fractions were used by the romans in various forms, and since fractions are useful, I'll include them.
+The lowest fraction is the dot which represents one twelth.
+Using twelths has the benefit of easily representing common divisions such as 1/2, 1/3, 1/4, 1/6.
+It can't represent 1/5 which the arabic decimal system easily can, but the arbic system can't represent 1/3, 1/5, or 1/6 as whole numbers, so overall dividing into 12 makes more common divisions easy.</p>
+<h2>Table</h2>
+<p>This is the value table that maps roman numerals to decimal numbers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Symbol</th>
+<th style="text-align:right">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">.</td>
+<td style="text-align:right">1/12</td>
+</tr>
+<tr>
+<td style="text-align:center">:</td>
+<td style="text-align:right">2/12</td>
+</tr>
+<tr>
+<td style="text-align:center">∴</td>
+<td style="text-align:right">3/12</td>
+</tr>
+<tr>
+<td style="text-align:center">∷</td>
+<td style="text-align:right">4/12</td>
+</tr>
+<tr>
+<td style="text-align:center">⁙</td>
+<td style="text-align:right">5/12</td>
+</tr>
+<tr>
+<td style="text-align:center">S</td>
+<td style="text-align:right">6/12</td>
+</tr>
+<tr>
+<td style="text-align:center">I</td>
+<td style="text-align:right">1</td>
+</tr>
+<tr>
+<td style="text-align:center">V</td>
+<td style="text-align:right">5</td>
+</tr>
+<tr>
+<td style="text-align:center">X</td>
+<td style="text-align:right">10</td>
+</tr>
+<tr>
+<td style="text-align:center">L</td>
+<td style="text-align:right">50</td>
+</tr>
+<tr>
+<td style="text-align:center">C</td>
+<td style="text-align:right">100</td>
+</tr>
+<tr>
+<td style="text-align:center">D</td>
+<td style="text-align:right">500</td>
+</tr>
+<tr>
+<td style="text-align:center">M</td>
+<td style="text-align:right">1000</td>
+</tr>
+</tbody>
+</table>
+<p>Working with integers is nicer than float points, so internally all numbers are represented by twelths of an I; the single-dot character.
+I will only use the single dot characters since the unicode multi-dots are difficult to input anyway.</p>
+<!-- HTML_TAG_END --></main>
+
+
+		<script type="module" data-sveltekit-hydrate="pdqjzh">
+			import { start } from "../_app/immutable/start-cb5479b9.js";
+
+			start({
+				env: {},
+				hydrate: {
+					status: 200,
+					error: null,
+					node_ids: [0, 3, 9],
+					params: {},
+					route: {"id":"/blog/roman-numerals"},
+					data: [null,null,{type:"data",data:null,uses:{}}],
+					form: null
+				},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="pdqjzh"]').parentNode,
+				trailing_slash: "never"
+			});
+		</script>
+	</div>
+	</body>
+</html>
